@@ -5,21 +5,21 @@
 class Clovapi < Formula
   desc "CLI profile switcher for coding agents"
   homepage "https://github.com/joohw/clovapi"
-  version "0.1.15"
+  version "0.1.16"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/joohw/clovapi/releases/download/v0.1.15/clovapi_0.1.15_darwin_amd64.tar.gz"
-      sha256 "de52aa390f881309189f1ed5f4beb59a6dd7a0ad97971d70d1fccdf15b52a8c0"
+      url "https://github.com/joohw/clovapi/releases/download/v0.1.16/clovapi_0.1.16_darwin_amd64.tar.gz"
+      sha256 "c1ff5010fb0bc3d6492b294ccd4cb9e3e5ca390522181a9a496ba9d41277f9fe"
 
       define_method(:install) do
         bin.install "clovapi"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/joohw/clovapi/releases/download/v0.1.15/clovapi_0.1.15_darwin_arm64.tar.gz"
-      sha256 "954de1ff5d2914117bd05e211ecc39151715b4b05755fee0077f5f2bbc1fd67d"
+      url "https://github.com/joohw/clovapi/releases/download/v0.1.16/clovapi_0.1.16_darwin_arm64.tar.gz"
+      sha256 "2644971251cb40ce2bb2a93d9f9336ff850d744456bbe903509aa5e76bc51510"
 
       define_method(:install) do
         bin.install "clovapi"
@@ -29,15 +29,15 @@ class Clovapi < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/joohw/clovapi/releases/download/v0.1.15/clovapi_0.1.15_linux_amd64.tar.gz"
-      sha256 "82ef8c935e54ed79d0b34d641ccc3d15ad81ffefd54a29122be5f14f7574d323"
+      url "https://github.com/joohw/clovapi/releases/download/v0.1.16/clovapi_0.1.16_linux_amd64.tar.gz"
+      sha256 "008e784ce56794b4823f69a148060b75dbe796b51cc5495e0d4d4b6c7208f0be"
       define_method(:install) do
         bin.install "clovapi"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/joohw/clovapi/releases/download/v0.1.15/clovapi_0.1.15_linux_arm64.tar.gz"
-      sha256 "d1b6405f3e8bc41d6ef8b0571e271ec211e5fd4e7229849a4b3602358f1cb4ea"
+      url "https://github.com/joohw/clovapi/releases/download/v0.1.16/clovapi_0.1.16_linux_arm64.tar.gz"
+      sha256 "9c33535efc1189113e3ebc82f6d4e86e8fedfb5ac4fbe5053e395c641f65384c"
       define_method(:install) do
         bin.install "clovapi"
       end
